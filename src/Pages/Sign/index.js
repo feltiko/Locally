@@ -9,8 +9,6 @@ class Introduction extends Component {
 	}
 
 	render () {
-		const { slides } = this.state;
-
 		return (
 			<View style={styles.container}>
 				<View style={styles.logo}>
@@ -20,21 +18,21 @@ class Introduction extends Component {
 				</View>
 				<View>
 					<Text style={styles.signInText}>Sign in</Text>
-					<View style={{marginBottom: 10,}}>
+					<View style={{ marginBottom: 10 }}>
 						<Button
 							onPress={() => this.props.navigation.navigate('Main')}
 							title='through facebook'
 							style={styles.button}
 						/>
 					</View>
-					<View style={{marginBottom: 10,}}>
+					<View style={{ marginBottom: 10 }}>
 						<Button
 							onPress={() => this.props.navigation.navigate('Main')}
 							title='through twitter'
 							style={styles.button}
 						/>
 					</View>
-					<View style={{marginBottom: 10,}}>
+					<View style={{ marginBottom: 10 }}>
 						<Button
 							onPress={() => this.props.navigation.navigate('Main')}
 							title='through instagram'

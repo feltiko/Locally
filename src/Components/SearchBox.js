@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     borderRadius: 5,
 		fontFamily: 'PTSansRegular',
-    fontSize: 16,
+    fontSize: 20,
   }
 });
 

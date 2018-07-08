@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 import Card from './Card';
 
@@ -12,7 +13,7 @@ class Cards extends Component {
 					id: 1,
 					city: 'Omsk',
 					name: 'Beautiful wooden bridge ',
-					complexity: 3,
+					complexity: 'Hard',
 					raiting: 5,
 					author: 1,
 					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet... ',
@@ -21,42 +22,7 @@ class Cards extends Component {
 						lng: 88,
 					},
 					photos: [],
-					preview:
-						'https://cdn.pixabay.com/photo/2017/02/19/22/15/bridge-2081063_1280.jpg',
-				},
-
-				{
-					id: 2,
-					city: 'Omsk',
-					name: 'Beautiful wooden bridge ',
-					complexity: 3,
-					raiting: 5,
-					author: 1,
-					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet... ',
-					coords: {
-						lat: 14,
-						lng: 88,
-					},
-					photos: [],
-					preview:
-						'https://cdn.pixabay.com/photo/2017/02/19/22/15/bridge-2081063_1280.jpg',
-				},
-
-				{
-					id: 3,
-					city: 'Omsk',
-					name: 'Beautiful wooden bridge ',
-					complexity: 3,
-					raiting: 5,
-					author: 1,
-					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet... ',
-					coords: {
-						lat: 14,
-						lng: 88,
-					},
-					photos: [],
-					preview:
-						'https://cdn.pixabay.com/photo/2017/02/19/22/15/bridge-2081063_1280.jpg',
+					preview: 'https://cdn.pixabay.com/photo/2017/02/19/22/15/bridge-2081063_1280.jpg',
 				},
 			],
 		};
@@ -64,7 +30,7 @@ class Cards extends Component {
 
 	test = (data) => {
 		console.log(data);
-	}
+	};
 
 	render () {
 		const { cards } = this.state;
@@ -87,6 +53,7 @@ class Cards extends Component {
 const styles = StyleSheet.create({
 	cardsWrapper: {
 		flexDirection: 'row',
+		position: 'relative',
 	},
 	heading: {
 		fontFamily: 'PTSansBold',
@@ -95,4 +62,5 @@ const styles = StyleSheet.create({
 		color: '#fff',
 	},
 });
+
 export default Cards;
